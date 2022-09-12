@@ -1,0 +1,39 @@
+﻿<Window x:Class="Airlines_App.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Airlines_App"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/airline5.jpg" TileMode="FlipX"/>
+        </Grid.Background>
+        <Button x:Name="btn_search" Content="Search" HorizontalAlignment="Left" Margin="575,305,0,0" VerticalAlignment="Top" Height="31" Width="96" Click="btn_search_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Label x:Name="lbl_source" Content="Source" HorizontalAlignment="Left" Margin="67,274,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Unicode MS" FontSize="16" RenderTransformOrigin="0.611,0.663"/>
+        <TextBox x:Name="txt_source" HorizontalAlignment="Left" Margin="67,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="27"/>
+        <Label x:Name="lbl_destination" Content="Destination" HorizontalAlignment="Left" Margin="219,274,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Unicode MS" FontSize="16" RenderTransformOrigin="0.611,0.663"/>
+        <TextBox x:Name="txt_destination" HorizontalAlignment="Left" Margin="219,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="27"/>
+        <Label x:Name="lbl_date" Content="Date" HorizontalAlignment="Left" Margin="368,274,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Unicode MS" FontSize="16" RenderTransformOrigin="0.611,0.663"/>
+        <DatePicker HorizontalAlignment="Left" Margin="369,312,0,0" VerticalAlignment="Top" Height="27" Width="131"/>
+
+
+        <Label Content="AirLines" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Height="45" Width="148" FontWeight="Bold" FontFamily="Algerian" FontSize="24">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFB9B2C0" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>
